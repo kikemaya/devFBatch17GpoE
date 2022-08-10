@@ -87,10 +87,10 @@ Encargados de administrar las tareas/instrucciones del proceso.
 
 Las tareas se pueden administrar y ejecutar de forma:
 
-- SECUENCIAL. Una instrucciòn a la vez,
+- SECUENCIAL/SINCRONO. Una instrucciòn a la vez,
 
 - PARALELA. Una serie de instrucciones que se reparten en màs de un hilo para ejecutar varias tareas al mismo tiempo y acabar màs rapido
 
-- CONCURRENTE. Una serie de instrucciones que simulan paralelismo en un solo hilo/menos recursos, ejecutandose de forma estrategica dandole prioridad a algunas instrucciones con 
+- CONCURRENTE/ASINCRONO. Una serie de instrucciones que simulan paralelismo en un solo hilo/menos recursos, ejecutandose de forma estrategica dandole prioridad a algunas instrucciones con 
 respecto a otras. Esta prioridad, la suele establecer el lenguaje ò el programador. En javascript, lo hace el event loop que puede vivir en el
 browser ò en node y depende de còmo el programador domine el flujo, para no bloquear el hilo.
