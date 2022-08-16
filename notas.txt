@@ -94,3 +94,10 @@ Las tareas se pueden administrar y ejecutar de forma:
 - CONCURRENTE/ASINCRONO. Una serie de instrucciones que simulan paralelismo en un solo hilo/menos recursos, ejecutandose de forma estrategica dandole prioridad a algunas instrucciones con 
 respecto a otras. Esta prioridad, la suele establecer el lenguaje ò el programador. En javascript, lo hace el event loop que puede vivir en el
 browser ò en node y depende de còmo el programador domine el flujo, para no bloquear el hilo.
+
+===============================================================================================================
+// Por defecto, javascript se interpreta en modo descuidado/sloppy mode
+"use strict"
+
+nombre = 'Juan'
+console.log(nombre)
