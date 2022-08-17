@@ -19,5 +19,8 @@
   "homepage": "https://github.com/kikemaya/devFBatch17GpoE#readme",
   "devDependencies": {
     "json-server": "^0.17.0"
+  },
+  "dependencies": {
+    "xmlhttprequest": "^1.8.0"
   }
 }
