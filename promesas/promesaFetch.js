@@ -21,7 +21,7 @@ function getData(url) {
 const pokemon = getData(url1);
 pokemon
   .then((data) => {
-    console.log("data ", data.name);
+    console.log("data Pokemon.- ", data.name);
   })
   .catch((error) => {
     console.log("error ", error);
@@ -30,7 +30,7 @@ pokemon
 const ricks = getData(url2);
 ricks
   .then((data) => {
-    console.log("data ", data.location.name);
+    console.log("data Rick&Morty.- ", data.location.name);
   })
   .catch((error) => {
     console.log("error ", error);
