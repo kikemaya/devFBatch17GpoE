@@ -35,3 +35,7 @@ ricks
   .catch((error) => {
     console.log("error ", error);
   });
+
+function pruebaGit() {
+  console.log('Git es la ley');
+}
