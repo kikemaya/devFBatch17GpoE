@@ -25,18 +25,17 @@ const printTask = (task, id) => {
   btn_2.textContent = 'Eliminar'
 
   btn_1.addEventListener('click', () => {
-    putData(id)
+    putData(id, input_todo.value)
   })
 
   btn_2.addEventListener('click', () => {
-    console.log('Eliminando...');
+    deleteData(id)
   })
 
   li.append(btn_1, btn_2)
 
   content_w.appendChild(li)
 }
-
 // funcion que obtiene datos de la api
 const getData = () => {
   return fetch(url)
@@ -64,16 +63,28 @@ const postData = (task) => {
     .then(data => console.log(data))
     .catch(error => console.error(error))
 }
-// crear la logica como te imagines que tiene que ser para editar una tarea
-const putData = (id) => {
+// funcion que edita datos de la api
+const putData = (id, task) => {
   return fetch(url + '/' + id, {
     method: 'PUT',
     headers: {
       'Content-Type': 'application/json'
     },
     body: JSON.stringify({
-      'task': 'Hola, soy una tarea nueva'
+      'task': task
     })
+  })
+    .then(response => response.json())
+    .then(data => console.log(data))
+    .catch(error => console.error(error))
+}
+// funcion que elimina datos a la api
+const deleteData = (id) => {
+  return fetch(url + '/' + id, {
+    method: 'DELETE',
+    headers: {
+      'Content-Type': 'application/json'
+    }
   })
     .then(response => response.json())
     .then(data => console.log(data))
@@ -85,9 +96,6 @@ getData()
 btn_add.addEventListener('click', () => {
   return postData(input_todo.value)
 })
-
-
-
 },{"uuid":2}],2:[function(require,module,exports){
 "use strict";
 

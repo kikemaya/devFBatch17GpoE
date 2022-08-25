@@ -1,24 +1,20 @@
 {
   "data": [
     {
-      "task": "Hola, soy una tarea nueva",
+      "task": "Comer frutas y verduras",
       "id": "c1a41340-a3db-4b9c-b1ac-c67a10c2137e"
     },
     {
-      "task": "Hola, soy una tarea nueva",
+      "task": "Hacer un horario",
       "id": "1cd41a87-f28d-4527-8186-da385b596e21"
     },
     {
-      "task": "Hola, soy una tarea nueva",
+      "task": "Consumir acidos grasos",
       "id": "bf00848b-2344-449a-bac1-f64c87c3fe0d"
     },
     {
-      "task": "Hola, soy una tarea nueva",
-      "id": "e4911a93-48b4-435e-90a8-5d9855aa6295"
-    },
-    {
-      "task": "Hola, soy una tarea nueva",
-      "id": "5266ae80-ebf0-4ba5-ad2b-f5ed3b5f577f"
+      "id": "56db7533-dd62-43b7-a24a-4c66e741e278",
+      "task": "nueva tarea"
     }
   ]
 }
