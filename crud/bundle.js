@@ -25,7 +25,7 @@ const printTask = (task, id) => {
   btn_2.textContent = 'Eliminar'
 
   btn_1.addEventListener('click', () => {
-    putData()
+    putData(id)
   })
 
   btn_2.addEventListener('click', () => {
@@ -48,7 +48,6 @@ const getData = () => {
     })
     .catch(error => console.error(error))
 }
-
 // funcion que envia datos a la api
 const postData = (task) => {
   return fetch(url, {
@@ -66,8 +65,8 @@ const postData = (task) => {
     .catch(error => console.error(error))
 }
 // crear la logica como te imagines que tiene que ser para editar una tarea
-const putData = () => {
-  return fetch(url, {
+const putData = (id) => {
+  return fetch(url + '/' + id, {
     method: 'PUT',
     headers: {
       'Content-Type': 'application/json'

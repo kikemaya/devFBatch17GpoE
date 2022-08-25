@@ -1,5 +1,5 @@
 // sirve para poder hacer que una funcion sincrona, pueda
-// acceder a los valores de una funcion asincrona
+// acceder a los valores de otra funcion asincrona
 const url_base = 'https://jsonplaceholder.typicode.com/users'
 
 const getData = async (url) => {
