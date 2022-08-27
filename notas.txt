@@ -101,3 +101,15 @@ browser ò en node y depende de còmo el programador domine el flujo, para no bl
 
 nombre = 'Juan'
 console.log(nombre)
+
+===============================================================================================================
+tipos de datos primitivos y objetos y arreglos
+
+primitivos:
+int, boolean, float, string, char, etc.
+
+paso por valor:
+ * immutable, no se puede cambiar
+
+y paso por referencia:
+ * mutable, que puede cambiar

@@ -1,6 +1,6 @@
 "use strict"
 
-const { v4: uuidv4 } = require('uuid');
+const { v4: uuidv4 } = require('uuid')
 
 const d = document
 
@@ -67,7 +67,7 @@ const postData = (task) => {
 
 // funcion que edita datos de la api
 const putData = (id, task) => {
-  return fetch(url + '/' + id, {
+  return fetch(`${url}/${id}`, {
     method: 'PUT',
     headers: {
       'Content-Type': 'application/json'

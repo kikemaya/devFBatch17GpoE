@@ -6,27 +6,21 @@ const galleryContainer = d.getElementById('gallery-container')
 
 const url = "https://picsum.photos/v2/list"
 
-const printGallery = () => {
+const printGallery = (imagen) => {
   const div = d.createElement('div')
   div.classList.add("grid-item")
 
+  div.style.backgroundImage = `url(${imagen})`
   galleryContainer.appendChild(div)
 }
-
-printGallery()
-printGallery()
 
 const getImages = async () => {
   const response = await fetch(url)
   const data = await response.json()
 
-  console.log(data);
-
   data.forEach(element => {
-    printGallery()
+    printGallery(element.download_url)
   });
 }
 
 getImages()
-
-// colocar la imagen en el cuadrado

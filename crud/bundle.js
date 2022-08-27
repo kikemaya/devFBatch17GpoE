@@ -1,7 +1,7 @@
 (function(){function r(e,n,t){function o(i,f){if(!n[i]){if(!e[i]){var c="function"==typeof require&&require;if(!f&&c)return c(i,!0);if(u)return u(i,!0);var a=new Error("Cannot find module '"+i+"'");throw a.code="MODULE_NOT_FOUND",a}var p=n[i]={exports:{}};e[i][0].call(p.exports,function(r){var n=e[i][1][r];return o(n||r)},p,p.exports,r,e,n,t)}return n[i].exports}for(var u="function"==typeof require&&require,i=0;i<t.length;i++)o(t[i]);return o}return r})()({1:[function(require,module,exports){
 "use strict"
 
-const { v4: uuidv4 } = require('uuid');
+const { v4: uuidv4 } = require('uuid')
 
 const d = document
 
@@ -36,6 +36,7 @@ const printTask = (task, id) => {
 
   content_w.appendChild(li)
 }
+
 // funcion que obtiene datos de la api
 const getData = () => {
   return fetch(url)
@@ -47,6 +48,7 @@ const getData = () => {
     })
     .catch(error => console.error(error))
 }
+
 // funcion que envia datos a la api
 const postData = (task) => {
   return fetch(url, {
@@ -63,9 +65,10 @@ const postData = (task) => {
     .then(data => console.log(data))
     .catch(error => console.error(error))
 }
+
 // funcion que edita datos de la api
 const putData = (id, task) => {
-  return fetch(url + '/' + id, {
+  return fetch(`${url}/${id}`, {
     method: 'PUT',
     headers: {
       'Content-Type': 'application/json'
@@ -78,6 +81,7 @@ const putData = (id, task) => {
     .then(data => console.log(data))
     .catch(error => console.error(error))
 }
+
 // funcion que elimina datos a la api
 const deleteData = (id) => {
   return fetch(url + '/' + id, {
